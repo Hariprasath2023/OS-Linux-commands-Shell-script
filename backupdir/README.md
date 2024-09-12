@@ -376,11 +376,10 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![alt text](<img/tar 2.png>)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![alt text](<img/tar 3.png>)
 
 gzip backup.tar
 
