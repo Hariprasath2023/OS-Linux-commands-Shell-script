@@ -234,76 +234,76 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![alt text](<img/sed 1.png>)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![alt text](<img/sed 2.png>)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](<img/sed 3.png>)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![alt text](<img/sed 4.png>)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![alt text](<img/sed 5.png>)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![alt text](<img/sed 6.png>)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![alt text](<img/sed 7.png>)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![alt text](<img/sed 8.png>)
 
 
 seq 10 
 ## OUTPUT
-
+![alt text](<img/seq 1.png>)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![alt text](<img/seq 2.png>)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![alt text](<img/seq 3.png>)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![alt text](<img/seq 4.png>)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![alt text](<img/seq 5.png>)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![alt text](<img/seq 6.png>)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![alt text](<img/sed 9.png>)
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -320,7 +320,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![alt text](<img/sort file21.png>)
 
 cat > file22
 ```
@@ -333,13 +333,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![alt text](<img/uniq file22.png>)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
- ## OUTPUT
+## OUTPUT
+![alt text](<img/cat file23.png>)
 
 cat < urllist.txt
 ```
