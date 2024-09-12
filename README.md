@@ -386,10 +386,11 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+![alt text](<img/ls gz.png>) 
+
 gunzip backup.tar.gz
 ## OUTPUT
-
+![alt text](<img/gunzip 1.png>)
  
 # Shell Script
 ```
@@ -399,7 +400,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![alt text](img/chmod.png)
  
 cat << stop > herecheck.txt
 ```
@@ -411,7 +412,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![alt text](<img/cat 1.png>)
 
 cat < scriptest.sh 
 ```bash
@@ -449,24 +450,28 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![alt text](<img/chmod 2.png>)
  
 ls file1
 ## OUTPUT
+![alt text](<img/ls file1.png>)
 
 echo $?
 ## OUTPUT 
+![alt text](<img/echo 1.png>)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+![alt text](<img/echo 2.png>) 
+
 abcd
  
 echo $?
  ## OUTPUT
-
+![alt text](<img/echo 2.png>) 
 
  
 # mis-using string comparisons
@@ -498,14 +503,14 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
-
+![alt text](<img/cat 2.png>)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![alt text](<img/chmod 3.png>)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -532,6 +537,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![alt text](<img/open psswdperm.png>)
 
 # check if with file location
 cat>ifnested.sh 
@@ -578,7 +584,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![alt text](<img/open ifnested.png>)
 
 
 # using numeric test comparisons
@@ -622,6 +628,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+![alt text](<img/chmod 4.png>)
 
 # check if a file
 cat > ifnested.sh 
@@ -671,6 +678,7 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+![alt text](<img/chmod 5.png>)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -699,7 +707,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![alt text](<img/chmod 6.png>)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -715,6 +723,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![alt text](<img/chmod 7.png>)
 
 # using the case command
 cat >casecheck.sh 
@@ -826,6 +835,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
+![alt text](<img/chmod 8.png>)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -847,7 +858,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![alt text](<img/cat 4.png>)
 
 cat forctype.sh 
 ```bash
@@ -860,7 +871,9 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
 ## OUTPUT
+![alt text](<img/chmod 9.png>)
 
 cat forctype1.sh 
 ```bash
@@ -874,6 +887,8 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![alt text](<img/chmod 10.png>)
+
 
 cat fornested1.sh 
 ```bash
@@ -892,7 +907,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![alt text](<img/chmod 11.png>)
  
 cat forbreak.sh 
 ```bash
@@ -934,7 +949,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+![alt text](<img/chmod 12.png>) 
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -948,7 +964,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
-
+![alt text](<img/chmod 13.png>)
 
  cat exread1.sh
 ```bash
@@ -960,7 +976,7 @@ echo "Hello $name, welcome to my program. “
 $ chmod 755 exread1.sh 
 
 ## OUTPUT
-
+![alt text](<img/chmod 14.png>)
 
 
 $ ./exread1.sh 
@@ -982,10 +998,10 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
-
+![alt text](<img/open funcex.png>)
  
  ./funcex.sh 1 2
-
+![alt text](<img/chmod 15.png>)
  
 cat argshift.sh
 ```bash
@@ -999,7 +1015,8 @@ $ chmod 777 argshift.sh
 
 ## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+![alt text](<img/chmod 16.png>)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1016,6 +1033,7 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+![alt text](<img/chmod 16.png>)
  
 cat argshift.sh
 ```bash
@@ -1029,7 +1047,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
- 
+ ![alt text](<img/chmod 16.png>)
  
 cat > nc.awk
 ```bash
@@ -1060,6 +1078,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![alt text](<img/awk 1.png>)
  
 cat > palindrome.sh
 ```bash
@@ -1087,7 +1106,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![alt text](img/palindrome.png)
 
 # RESULT:
 The Commands are executed successfully.
