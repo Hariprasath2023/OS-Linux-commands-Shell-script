@@ -49,21 +49,18 @@ cat < file2
 ## OUTPUT
 ![alt text](<img/cat file2.png>)
 
-
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
-![alt text](<img/cmp .png>) 
+![alt text](<img/cmp file1 file2.png>)
 
 comm file1 file2
 ## OUTPUT
 ![alt text](img/comm.png)
-
  
 diff file1 file2
 ## OUTPUT
-![alt text](img/diff.png)
-
+![alt text](<img/diff file1 file2.png>)
 #Filters
 
 ### Create the following files file11, file22 as follows:
