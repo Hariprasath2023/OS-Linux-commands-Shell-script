@@ -82,18 +82,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![alt text](<img/cut file11.png>)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![alt text](<img/cut file22.png>)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![alt text](<img/cut file 22.png>)
 
 cat < newfile 
 ```
@@ -107,40 +107,40 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
-
+![alt text](<img/grep 1.png>)
 
 
 grep hello newfile 
 ## OUTPUT
-
+![alt text](<img/grep 2.png>)
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![alt text](<img/grep 3.png>)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![alt text](<img/grep 4.png>)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![alt text](<img/grep 5.png>)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![alt text](<img/grep 6.png>)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![alt text](<img/grep 7.png>)
 
 cat < newfile 
 ```
@@ -163,60 +163,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![alt text](img/egrep.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 2.png>)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 3.png>)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 4.png>)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 5.png>)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 6.png>)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 7.png>)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 8.png>)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 9.png>)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![alt text](<img/egrep 10.png>)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![alt text](<img/egrep 11.png>)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![alt text](<img/egrep 12.png>)
 
 cat > file23
 ```
